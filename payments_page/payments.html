@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICES Payment Portal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="payments.css"></link>
+</head>
+
+<body class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+        <!-- Header with Logo -->
+        <div class="mb-8 text-center">
+            <div class="flex justify-center mb-6">
+                <img src="mubasiceslogo.png" class="h-32 w-auto">
+            </div>
+            <h1 class="text-4xl font-bold mb-2" style="color: #1f1a50;">ICES Payment Portal</h1>
+            <p class="text-gray-600">Innovation in Civil Engineering Society</p>
+            <p class="text-gray-600 text-sm">Complete your membership and event registrations</p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- Order Summary -->
+            <div>
+                <div class="ices-card p-6 border-2" style="border-color: #1f1a50;">
+                    <h2 class="text-2xl font-semibold mb-6" style="color: #1f1a50;">Payments Summary</h2>
+
+                    <div id="cart-items" class="space-y-4 mb-6">
+                        <!-- Cart items will be inserted here -->
+                    </div>
+
+                    <div class="separator"></div>
+
+                    <div class="space-y-3">
+                        <div class="flex justify-between font-semibold text-lg" style="color: #1f1a50;">
+                            <span>Total</span>
+                            <span id="total">MWK 0.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Form -->
+            <div>
+                <div class="ices-card p-6 border-2" style="border-color: #1f1a50;">
+                    <h2 class="text-2xl font-semibold mb-6" style="color: #1f1a50;">Payment Details</h2>
+
+                    <form id="payment-form" class="space-y-6">
+                        <!-- Payment Method -->
+                        <div>
+                            <label class="ices-label mb-3">Payment Method</label>
+
+                            <div class="payment-method selected" data-method="airtel_money">
+                                <input type="radio" name="payment-method" value="airtel-money">
+                                <img src="airtel-svgrepo-com.svg" class="payment-method-svg">
+
+                                <label class="flex-1 cursor-pointer">Airtel Money</label>
+                            </div>
+
+                            <div class="payment-method" data-method="mpamba">
+                                <input type="radio" name="payment-method" value="tnm-mpamba">
+                                <img src="tnm-logo.svg" class="payment-method-svg">
+                                <label class="flex-1 cursor-pointer">TNM Mpamba</label>
+                            </div>
+
+                            <div class="payment-method" data-method="national_bank">
+                                <input type="radio" name="payment-method" value="national-bank">
+                                <img src="bank-svgrepo-com.svg" class="payment-method-svg">
+                                <label class="flex-1 cursor-pointer">Instant Bank Transfer</label>
+                            </div>
+                        </div>
+
+                        <!-- Card Details -->
+                        <div id="airtel-tnm-details">
+
+                            <div class="separator"></div>
+
+                            <!-- Billing Information -->
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold" style="color: #1f1a50;">Mobile Money Information</h3>
+
+                                <div>
+                                    <label class="ices-label">Phone Number</label>
+                                    <input type="tel" id="phone" class="ices-input" placeholder="09999999999" required>
+                                </div>
+
+                                <div>
+                                    <label for="student-id" class="ices-label">Student ID</label>
+                                    <input type="text" id="student-id" class="ices-input" placeholder="BCEX/99/SS/000" required>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Wallet Info -->
+                        <div id="bank-info">
+
+                            <div class="separator"></div>
+
+                            <!-- Bank Details -->
+                            <div class="space-y-4">
+                                <h3 class="text-lg font-semibold" style="color: #1f1a50;">Bank Details</h3>
+
+                                <div class="bank-details-container">
+                                    <div class="info-row">
+                                        <span class="label">Bank Name</span>
+                                        <div class="value">
+                                            <span>National Bank</span>
+                                            <img src="copy-svgrepo-com.svg" alt="Copy" class="icon">
+                                        </div>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="label">Account Name</span>
+                                        <div class="value">
+                                            <span>ICES</span>
+                                            <img src="copy-svgrepo-com.svg" alt="Copy" class="icon">
+                                        </div>
+                                    </div>
+                                    <div class="info-row">
+                                        <span class="label">Account Number</span>
+                                        <div class="value">
+                                            <span>2652858341</span>
+                                            <img src="copy-svgrepo-com.svg" alt="Copy" class="icon">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="submit-btn" class="ices-button">
+                            Pay £0.00
+                        </button>
+
+                        <p class="text-gray-600 text-sm text-center">
+                            Your payment is secure and encrypted. By completing this purchase, you agree to our terms and conditions.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast" class="toast toast-success">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+            <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+        <div>
+            <p class="font-semibold">Payment successful!</p>
+            <p class="text-sm text-gray-600">Your membership and event registrations are confirmed.</p>
+        </div>
+    </div>
+
+    <script src="payments.js"></script>
+</body>
+</html>

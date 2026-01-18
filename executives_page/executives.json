@@ -1,0 +1,198 @@
+
+[
+    {
+        "year" : "2025/2026",
+        "leaders": [
+            {
+                "name": "Samson Namanya",
+                "position": "President",
+                "yearOfStudy": "4th Year",
+                "major": "Transportation Engineering",
+                "bio": "School of Engineering Board member with a passion for modern and intelligent transportation systems and structural design. Focused on practical projects and student initiatives that develop skills, inspire innovation, and prepare members for professional success.",
+                "image": "samsonnamanya.jpg",
+                "email": "bcet22-snamanya@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+            },
+            {
+                "name": "Hope Tsonga",
+                "position": "Vice President",
+                "yearOfStudy": "3rd Year",
+                "major": "Transportation Engineering",
+                "bio": " ",
+                "image": "https://images.unsplash.com/photo-1740153204804-200310378f2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzdHVkZW50JTIwbGVhZGVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjU0NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                "email": "bcet22-snamanya@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+            }
+        ],
+        "executiveMembers": [
+
+            {
+                "name": "Yamikani Ngaiyaye",
+                "position": "General Secretary",
+                "yearOfStudy": "4th Year",
+                "major": "Structural Engineering",
+                "bio": "A proactive leader, aspiring structural engineer, and a Millennium Fellowship Class of 2024 Alumnus, passionate about structural design and integrity, sustainable building practices, and innovative solutions that transforms technical theory into high-quality, practical work that solves real-world problems.",
+                "image": "yamikaningaiyaye.jpg",
+                "email": "bces22-yngaiyaye@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/yamikani-ngaiyaye"
+            },
+            {
+                "name": "Glory Nyirenda",
+                "position": "Publicity Secretary",
+                "yearOfStudy": "4th Year",
+                "major": "Transportation Engineering",
+                "bio": "A forward-thinking leader who cares about building sustainable infrastructure for the future. Focused on turning school knowledge into real engineering solutions that solve problems and help businesses grow.",
+                "image": "glorynyirenda.jpg",
+                "email": "bcet22-gnyirenda@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/glory-nyirenda-79a659376/"
+            },
+            {
+                "name": "Memory Chikwawa",
+                "position": "Treasurer",
+                "yearOfStudy": "3rd Year",
+                "major": "Transportation Engineering",
+                "bio": "A dedicated civil engineering student and developing leader known for guiding teams, supporting peers, and contributing to impactful, sustainable projects. Passionate about turning technical knowledge into real-world results.",
+                "image": "memorychikwawa.jpg",
+                "email": "memorychikwa32@gmail.com",
+                "linkedIn": "https://www.linkedin.com/in/memory-chikwawa-9b98ab32a/"
+            },
+            {
+                "name": "Edith Kabito",
+                "position": "Social Media Director",
+                "yearOfStudy": "4th Year",
+                "major": "Structural Engineering",
+                "bio": "A motivated civil engineering student with a deep interest in forward-thinking design and practical innovation. I enjoy exploring new concepts and turning them into solutions that truly improve how communities live, move, and grow.",
+                "image": "edithkabito.jpg",
+                "email": "bces22-echiumia@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/edith-kabito-12712435b/"
+            },
+            {
+                "name": "Apatsa Kambale",
+                "position": "Merchandise Director",
+                "yearOfStudy": "3rd Year",
+                "major": "Water Engineering",
+                "bio": "Short bio for Rita",
+                "image": "https://images.unsplash.com/photo-1740153204804-200310378f2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzdHVkZW50JTIwbGVhZGVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjU0NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                "email": "bcet22-snamanya@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+            },
+            {
+                "name": "Dennis Dickson",
+                "position": "Executive Member",
+                "yearOfStudy": "2nd Year",
+                "major": "Civil Engineering",
+                "bio": "Short bio for Dennis",
+                "image": "https://images.unsplash.com/photo-1740153204804-200310378f2f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBzdHVkZW50JTIwbGVhZGVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjU0NTY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                "email": "bcet22-snamanya@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+            },
+            {
+                "name": "Ellen Nothale",
+                "position": "Executive Member",
+                "yearOfStudy": "3rd Year",
+                "major": "Transportation Engineering",
+                "bio": "Aspiring civil engineer, with a keen interest in transportation systems, committed to shaping the future of the built environment. Focused on integrating sustainable practices and smart technologies into infrastructure design. Driven by the goal of creating efficient, safe, and environmentally conscious systems that serve communities and endure for generations.",
+                "image": "ellennothale.jpeg",
+                "email": "bcet23-enothale@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/ellen-nothale-741031331/"
+            },
+            {
+                "name": "Edna Hafiza Matola",
+                "position": "Executive Member",
+                "yearOfStudy": "4th Year",
+                "major": "Transportation Engineering",
+                "bio": "Hard working, passionate about structures and striving for a better community for our society members......one with high tensile strength!",
+                "image": "hafizamatola.jpg",
+                "email": "matolahafizaedna@gmail.com",
+                "linkedIn": "https://www.linkedin.com/in/edna-hafiza-matola-66824039b/"
+            },
+            {
+                "name": "Praise Ngoma",
+                "position": "Executive Member",
+                "yearOfStudy": "4th Year",
+                "major": "Structural Engineering",
+                "bio": "The desire of a brighter infrastructural future, being the best in engineering its what I do ",
+                "image": "praisengoma.jpg",
+                "email": "bcew22-pngoma@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/praise-ngoma-255635340/"
+            }
+        ]
+    },
+    {
+        "year": "2024/2025",
+        "leaders": [
+            {
+                "name": "Ruth Msyali",
+                "position": "President",
+                "yearOfStudy": "5th Year",
+                "major": "Structural Engineering",
+                "bio": "A civil engineering student with a strong interest in structural engineering and leadership, driven by the challenge of understanding structural behavior and applying that knowledge to design safe, reliable, and impactful structures. Alongside technical growth, values building meaningful connections, working collaboratively, and creating opportunities that help others grow. Committed to continuous self-improvement, learning from the surrounding environment, and using both engineering and leadership skills to make a lasting impact in the community.",
+                "image": "ruthmsyali.jpg",
+                "email": "bces21-rmsyali@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/ruth-msyali-385a93262/"
+            },
+            {
+                "name": "Sibusiso Gombachika",
+                "position": "Vice President",
+                "yearOfStudy": "4th Year",
+                "major": "Structural Engineering",
+                "bio": "Short bio for Sibu ",
+                "image": "sibusisogombachika.jpg",
+                "email": "bcet22-snamanya@mubas.ac.mw",
+                "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+            }
+        ],
+        "executiveMembers":[
+        {
+            "name": "Thabiso Chokocha",
+            "position": "General Secretary",
+            "yearOfStudy": "4th Year",
+            "major": "Structural Engineering",
+            "bio": "A highly passionate Structural Engineering student with a strong ambition to serve the engineering world across Malawi and abroad, demonstrating both effective leadership and technical problem-solving skills.",
+            "image": "thabisochokocha.jpg",
+            "email": "thabisofadweck@gmail.com",
+            "linkedIn": "https://www.linkedin.com/in/thabiso-fadweck-chokocha-6bbba62a1/"
+        },
+        {
+            "name": "Gracia Kamphinda",
+            "position": "Public Secretary",
+            "yearOfStudy": "4th Year",
+            "major": "Structural Engineering",
+            "bio": "A civil engineering student passionate about building structures with integrity and empowering others to reach their full potential. leading with enthusiasm, inspiring fellow students to make their voices heard through public speaking and community driven initiatives .",
+            "image": "graciakamphinda.jpg",
+            "email": "bces22-gkamphinda@mubas.ac.mw",
+            "linkedIn": "https://www.linkedin.com/in/gracia-kamphinda-massina-501b84327/"
+        },
+        {
+            "name": "Jessica Ghobede",
+            "position": "Treasurer",
+            "yearOfStudy": "5th Year",
+            "major": "Structural Engineering",
+            "bio": "short bio for jessie",
+            "image": "jessicaghobede.jpg",
+            "email": "bcet22-snamanya@mubas.ac.mw",
+            "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+        },
+        {
+            "name": "Tulibake Msiska",
+            "position": "Social Media Director",
+            "yearOfStudy": "4th Year",
+            "major": "Structural Engineering",
+            "bio": "Creative and entrepreneurial Pan-African student engineer with a passion for positive Climate Action and Sustainable development in the global south.",
+            "image": "tulibakemsiska.jpg",
+            "email": "bces22-tmsiska@mubas.ac.mw",
+            "linkedIn": "https://www.linkedin.com/in/tulibake-msiska-747a7429a/"
+        },
+        {
+            "name": "Melissa Gondwe",
+            "position": "Merchandise Director",
+            "yearOfStudy": "3rd Year",
+            "major": "Water Engineering",
+            "bio": "Short bio for melissa",
+            "image": "melissagondwe.jpg",
+            "email": "bcet22-snamanya@mubas.ac.mw",
+            "linkedIn": "https://www.linkedin.com/in/samson-namanya-3278952b3/"
+        }
+    ]
+    }
+]

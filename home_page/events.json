@@ -1,0 +1,16 @@
+[
+    {
+        "title": "First Year Welcoming Dinner",
+        "date": "2026-02-27",
+        "description": "A dinner event to welcome first-year civil engineering students to the department, fostering camaraderie and networking among peers and faculty.",
+        "image": "dinner.jpg",
+        "location": "MUBAS Campus Cafeteria"
+    },
+    {
+        "title": "Lilongwe-Salima Water Project Site Visit",
+        "date": "2026-03-27",
+        "description": "A site visit to the Lilongwe-Salima Water Project to observe ongoing construction and engineering practices.",
+        "image": "salima_trip.jpg",
+        "location": "Lilongwe-Salima Water Project Site"
+    }
+]
