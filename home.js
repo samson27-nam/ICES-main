@@ -1,5 +1,5 @@
-import RenderHeader from "../common/Header.js";
-import RenderFooter from "../common/Footer.js";
+import RenderHeader from "./common/Header.js";
+import RenderFooter from "./common/Footer.js";
 
 // GLOBAL DATA
 const pageName = "Home";

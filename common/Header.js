@@ -14,7 +14,7 @@ export default function RenderHeader(pageName)
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex items-center gap-8 header-nav" id="desktop-nav">
-                    <a href="../home_page/index.html"  class="desktop-nav-element">Home</a>
+                    <a href="${pageName === 'Home' ? '#' : '../index.html'}"  class="desktop-nav-element">Home</a>
                     <a href="../about_page/about.html"  class="desktop-nav-element">About</a>
                     <a href="../department_page/index.html"  class="desktop-nav-element">Our Department</a>
                     <a href="../executives_page/index.html" class="desktop-nav-element">Executives</a>
@@ -33,7 +33,7 @@ export default function RenderHeader(pageName)
 
                 <!-- Mobile Menu -->
             <nav id="mobileMenu" class="mobile-menu md:hidden">
-                <a href="../home_page/index.html" class="mobile-nav-element">Home</a>
+                <a href="${pageName === 'Home' ? '#' : '../index.html'}" class="mobile-nav-element">Home</a>
                 <a href="../about_page/about.html" class="mobile-nav-element">About</a>
                 <a href="../department_page/index.html" class="mobile-nav-element">Our Department</a>
                 <a href="../executives_page/index.html" class="mobile-nav-element">Executives</a>
