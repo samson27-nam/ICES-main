@@ -1,5 +1,5 @@
     // Cart data
-    const cartData = [
+   /* const cartData = [
     {
         id: '1',
         name: 'Semester 1 Membership Fee',
@@ -21,38 +21,70 @@
         priceTambala: 2000000,
         selected: false
     }
-    ];
+    ]; */
 
-    let paymentMethod = 'card';
+    let cartData = [];
+    let paymentMethod = 'airtel_money';
     let isProcessing = false;
+
+    //load cart data from events.json
+    async function loadCartData() {
+        try {
+            const response = await fetch('../events.json'); 
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            const data = await response.json();
+            cartData = data.map(event => ({
+                id: event.id,
+                name: event.title,
+                description: event.date,
+                priceTambala: event.regFeeTambala,
+                selected: false
+            }));
+            renderCartItems();
+            updateTotals();
+        } catch (error) {
+            console.error("Failed to load events data:", error);
+        }
+    }
 
     // Render cart items
     function renderCartItems() {
         const container = document.getElementById('cart-items');
+        if (!container) return;
         container.innerHTML = '';
 
-        cartData.forEach(item => {
+        cartData.forEach((item, index) => {
             const itemElement = document.createElement('div');
             itemElement.className = `cart-item ${item.selected ? 'selected' : ''}`;
             itemElement.innerHTML = `
-                            <div class="flex items-center h-5 mt-0.5">
-                                <input type="checkbox" ${item.selected ? 'checked' : ''} class="h-4 w-4">
-                            </div>
-                            <div class="flex-1 min-w-0">
-                                <p class="text-gray-900 font-medium">${item.name}</p>
-                                <p class="text-gray-600 text-sm">${item.description}</p>
-                            </div>
-                            <p class="text-gray-900 font-medium whitespace-nowrap">MWK ${(item.priceTambala / 100).toFixed(2)}</p>
-                        `;
+                <div class="flex items-center h-5 mt-0.5">
+                    <input type="checkbox" ${item.selected ? 'checked' : ''} class="h-4 w-4 cart-item-checkbox" data-index="${index}">
+                </div>
+                <div class="flex-1 min-w-0">
+                    <p class="text-gray-900 font-medium">${item.name}</p>
+                    <p class="text-gray-600 text-sm">${item.description}</p>
+                </div>
+                <p class="text-gray-900 font-medium whitespace-nowrap">MWK ${(item.priceTambala / 100).toFixed(2)}</p>
+            `;
 
+            // Add event listener to checkbox
+            const checkbox = itemElement.querySelector('.cart-item-checkbox');
+            checkbox.addEventListener('change', (e) => {
+                e.stopPropagation();
+                cartData[index].selected = e.target.checked;
+                renderCartItems();
+                updateTotals();
+            });
+
+            // Add click listener to item
             itemElement.addEventListener('click', () => {
-                item.selected = !item.selected;
+                cartData[index].selected = !cartData[index].selected;
                 renderCartItems();
                 updateTotals();
             });
 
             container.appendChild(itemElement);
-         });
+        });
     }
 
     // Update totals
@@ -64,8 +96,6 @@
             totalTambala += item.priceTambala;
         })
 
-        //document.getElementById('subtotal').textContent = `£${subtotal.toFixed(2)}`;
-        //document.getElementById('processing-fee').textContent = `£${processingFee.toFixed(2)}`;
         document.getElementById('total').textContent = `MWK ${(totalTambala/100).toFixed(2)}`;
         document.getElementById('submit-btn').textContent = isProcessing ? 'Processing...' : `Pay MWK ${(totalTambala/100).toFixed(2)}`;
 
@@ -103,31 +133,31 @@
 
     // Form submission
     document.getElementById('payment-form').addEventListener('submit', async function(e) {
-    e.preventDefault();
+        e.preventDefault();
 
-    if (paymentMethod === 'wallet') return;
+        if (paymentMethod === 'wallet') return;
 
-    isProcessing = true;
-    updateTotals();
+        isProcessing = true;
+        updateTotals();
 
-    // Simulate payment processing
-    await new Promise(resolve => setTimeout(resolve, 2000));
+        // Simulate payment processing
+        await new Promise(resolve => setTimeout(resolve, 2000));
 
-    isProcessing = false;
-    updateTotals();
+        isProcessing = false;
+        updateTotals();
 
-    // Show success toast
-    const toast = document.getElementById('toast');
-    toast.classList.add('show');
+        // Show success toast
+        const toast = document.getElementById('toast');
+        if (toast) {
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 4000);
+        }
 
-    setTimeout(() => {
-    toast.classList.remove('show');
-}, 4000);
-
-    // Reset form
-    this.reset();
-});
+        // Reset form
+        this.reset();
+    });
 
     // Initialize
-    renderCartItems();
-    updateTotals();
+    loadCartData();

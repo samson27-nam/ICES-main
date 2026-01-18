@@ -357,7 +357,7 @@ async function loadUpcomingEvents() {
                     <p class="event-date"><i class="far fa-calendar-alt"></i> ${event.date}</p>
                     <p class="event-location"><i class="fas fa-map-marker-alt"></i> ${event.location}</p>
                     <p>${event.description}</p>
-                    <a href="register.html" class="event-button">Register Now</a>
+                    <a href="./payments_page/payments.html" class="event-button">Register Now</a>
                 </div>
             </div>`; });
     } catch (error) {

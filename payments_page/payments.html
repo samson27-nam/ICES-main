@@ -9,6 +9,11 @@
 </head>
 
 <body class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <header class="bg-[#1f1a50] text-white mb-8" id="header">
+        <!-- Header injected by ../common/Header.js -->
+    </header>
+
     <div class="max-w-5xl mx-auto">
         <!-- Header with Logo -->
         <div class="mb-8 text-center">
@@ -94,7 +99,7 @@
                         </div>
 
                         <!-- Wallet Info -->
-                        <div id="bank-info">
+                        <div id="bank-info" class="hidden">
 
                             <div class="separator"></div>
 
@@ -130,7 +135,7 @@
 
                         <!-- Submit Button -->
                         <button type="submit" id="submit-btn" class="ices-button">
-                            Pay £0.00
+                            Pay MWK 0.00
                         </button>
 
                         <p class="text-gray-600 text-sm text-center">
@@ -142,18 +147,6 @@
         </div>
     </div>
 
-    <!-- Toast Container -->
-    <div id="toast" class="toast toast-success">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-            <polyline points="22 4 12 14.01 9 11.01"/>
-        </svg>
-        <div>
-            <p class="font-semibold">Payment successful!</p>
-            <p class="text-sm text-gray-600">Your membership and event registrations are confirmed.</p>
-        </div>
-    </div>
-
-    <script src="payments.js"></script>
+    <script type="module" src="payments.js"></script>
 </body>
 </html>
