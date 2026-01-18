@@ -99,6 +99,12 @@ async function RenderWholeExecutive() {
 
         renderTeam(leadershipCore, sData.leaders, true);
         renderTeam(executiveBoard, sData.executiveMembers, false);
+        
+        // Hide skeletons after data loads
+        const leadershipSkeleton = document.getElementById("leadership-skeleton");
+        const executiveSkeleton = document.getElementById("executive-skeleton");
+        if (leadershipSkeleton) leadershipSkeleton.classList.add("hidden");
+        if (executiveSkeleton) executiveSkeleton.classList.add("hidden");
     } catch (error) {
         console.error("Failed to load executives data:", error);
     }

@@ -205,3 +205,25 @@ input[type="radio"] {
 .hidden {
     display: none;
 }
+/* Skeleton Loading Animation */
+@keyframes skeleton-shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.skeleton-item {
+    background: linear-gradient(
+        90deg,
+        #f3f4f6 25%,
+        #e5e7eb 50%,
+        #f3f4f6 75%
+    );
+    background-size: 1000px 100%;
+    animation: skeleton-shimmer 2s infinite;
+    border-radius: 0.375rem;
+    height: 80px;
+}

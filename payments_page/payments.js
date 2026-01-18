@@ -42,6 +42,10 @@
             }));
             renderCartItems();
             updateTotals();
+            
+            // Hide skeleton after data loads
+            const cartSkeleton = document.getElementById('cart-skeleton');
+            if (cartSkeleton) cartSkeleton.classList.add('hidden');
         } catch (error) {
             console.error("Failed to load events data:", error);
         }
