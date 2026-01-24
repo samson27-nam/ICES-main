@@ -25,9 +25,9 @@ export default function RenderFooter()
             <div class="text-[#fe7701] text-[1.2rem] mb-4 font-semibold">
                 <h3 class="mb-4">Connect With Us</h3>
                 <div class="flex flex-col gap-4 mb-8 text-sm">
-                    <a href="https://www.tiktok.com/@mubas.ices" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#fe7701] no-underline flex items-center gap-2 transition-colors duration-300"><img src="tiktok.svg" class="w-5 h-5 mr-2"> TikTok</a>
-                    <a href="https://www.linkedin.com/company/mubas-ices/" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#fe7701] no-underline flex items-center gap-2 transition-colors duration-300"><img src="linkedin.svg" class="w-5 h-5 mr-2"> LinkedIn</a>
-                    <a href="https://www.instagram.com/mubas.ices/" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#fe7701] no-underline flex items-center gap-2 transition-colors duration-300"><img src="instagram-svgrepo-com.png" class="w-5 h-5 mr-2"> Instagram</a>
+                    <a href="https://www.tiktok.com/@mubas.ices" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#fe7701] no-underline flex items-center gap-2 transition-colors duration-300"><i class="fab fa-tiktok mr-2"></i> TikTok</a>
+                    <a href="https://www.linkedin.com/company/mubas-ices/" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#fe7701] no-underline flex items-center gap-2 transition-colors duration-300"><i class="fab fa-linkedin mr-2"></i> LinkedIn</a>
+                    <a href="https://www.instagram.com/mubas.ices/" target="_blank" rel="noopener noreferrer" class="text-white/80 hover:text-[#fe7701] no-underline flex items-center gap-2 transition-colors duration-300"><i class="fab fa-instagram mr-2"></i> Instagram</a>
                 </div>
             </div>
             <div class="text-[#fe7701] text-[1.2rem] mb-5 font-semibold">
